@@ -9,7 +9,7 @@ export default createUnplugin<Options | undefined>(options => ({
   name: 'unplugin-font-to-buffer',
   enforce: 'post',
   async transform(_: string, id: string) {
-    const include = options?.include ?? '**/*.{ttf,otf}'
+    const include = options?.include ?? '**/*.{ttf,otf,woff}'
     const filter = createFilter(include, options?.exclude)
 
     if (!filter(id))
