@@ -5,12 +5,12 @@ import type { Options } from './types'
 
 // Credits to mattjennings
 // https://github.com/mattjennings/mattjennings.io/blob/master/vite.config.js
-export default createUnplugin<Options>(options => ({
+export default createUnplugin<Options | undefined>(options => ({
   name: 'unplugin-font-to-buffer',
   enforce: 'post',
   async transform(_: string, id: string) {
-    const include = options.include || '**/*.{ttf,otf}'
-    const filter = createFilter(include, options.exclude)
+    const include = options?.include ?? '**/*.{ttf,otf}'
+    const filter = createFilter(include, options?.exclude)
 
     if (!filter(id))
       return
