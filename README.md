@@ -42,6 +42,7 @@ export default {
 ```ts
 // nuxt.config.js
 export default defineNuxtConfig({
+  // Applied on Nitro only
   modules: ['unplugin-font-to-buffer/nuxt'],
 })
 ```
