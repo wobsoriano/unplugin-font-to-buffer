@@ -1,6 +1,6 @@
 # unplugin-font-to-buffer
 
-Import font files as Buffer. Best used with [satori](https://github.com/vercel/satori).
+Import font files as Buffer. Meant to be used with [satori](https://github.com/vercel/satori).
 
 ## Install
 
