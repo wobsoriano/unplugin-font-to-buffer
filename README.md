@@ -36,6 +36,18 @@ export default {
 
 <br></details>
 
+<details>
+<summary>Nuxt</summary><br>
+
+```ts
+// nuxt.config.js
+export default defineNuxtConfig({
+  modules: ['unplugin-font-to-buffer/nuxt'],
+})
+```
+
+<br></details>
+
 
 <details>
 <summary>Webpack</summary><br>
