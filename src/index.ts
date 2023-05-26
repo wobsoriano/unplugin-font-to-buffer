@@ -1,4 +1,4 @@
-import fs from 'fs/promises'
+import fs from 'node:fs/promises'
 import { createUnplugin } from 'unplugin'
 import { createFilter } from '@rollup/pluginutils'
 import type { Options } from './types'

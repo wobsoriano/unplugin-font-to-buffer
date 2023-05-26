@@ -1,6 +1,5 @@
 {
   "name": "unplugin-font-to-buffer",
-  "type": "module",
   "version": "0.1.4",
   "packageManager": "pnpm@8.5.1",
   "description": "Import font files as Buffer.",
@@ -76,7 +75,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch src",
-    "build:fix": "esno scripts/postbuild.ts",
+    "build:fix": "tsx scripts/postbuild.mts",
     "lint": "eslint .",
     "prepublishOnly": "pnpm run build",
     "release": "bumpp && pnpm publish",
@@ -92,12 +91,12 @@
     "bumpp": "^9.1.0",
     "chalk": "^5.2.0",
     "eslint": "^8.41.0",
-    "esno": "^0.16.3",
     "fast-glob": "^3.2.12",
     "rollup": "^3.23.0",
     "tsup": "^6.7.0",
+    "tsx": "^3.12.7",
     "typescript": "5.0.4",
-    "vite": "^3.2.7",
+    "vite": "^4.3.9",
     "vitest": "^0.31.1",
     "webpack": "^5.84.1"
   },
