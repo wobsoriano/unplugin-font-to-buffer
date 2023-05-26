@@ -1,6 +1,6 @@
 {
   "name": "unplugin-font-to-buffer",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "packageManager": "pnpm@8.5.1",
   "description": "Import font files as Buffer.",
   "publishConfig": {
